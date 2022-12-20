@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Link Font Anwsersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    
+    <!-- Link css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page 2</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- <div class="container-fluid">
+    </div> -->
+    <!-- <div class="nav row justify-content-between">
+        <div class="logo-text col-3">
+            <a href="#" class="navbar-brand">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Logo</span>
+            </a>
+        </div>
+        <div class="search col-3 text-end">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div> -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar-nav">
+        <div class="main-navbar container-fluid d-flex justify-content-between">
+            <div href="#" class="logo navbar-brand">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Location</span>
+            </div>
+            <div class="search ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero and booking -->
+    <div class="content-hero">
+        <div class="content-hero-img ">
+            <img src="./assets/img/hero.jpg" alt="hero-img" class="hero-img">
+        </div>
+        <!-- Booking -->
+        <div class="booking">
+            <ul class="d-flex booking-items">
+                <li class="booking-item ">
+                    <div class="booking-item-link">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <span>Flight</span>
+                    </div>
+                </li>
+                <li class="booking-item active">
+                    <div class="booking-item-link">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>Hotel</span>
+                    </div>
+                </li>
+                <li class="booking-item">
+                    <div class="booking-item-link">
+                        <i class="fa-solid fa-taxi"></i>
+                        <span>Rental</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="booking-contents ">
+                <!-- Booking content FLight -->
+                <div class="booking-content active p-3">
+                    <h4 class="booking-header">
+                        Travel the world with us
+                    </h4>
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column form-group px-2">
+                            <label for="">From</label>
+                            <input class="input-form p-2" type="text" placeholder="Departing from">
+                        </div>
+                        <div class="col-6 d-flex flex-column form-group px-2">
+                            <label for="">To</label>
+                            <input class="input-form p-2" type="text" placeholder="Arriving at">
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary px-3 py-2 my-3">Search and find dates</button>
+                </div>
+
+                <!-- Booing content Hotel -->
+                <div class="booking-content  p-3">
+                    <h4 class="booking-header">
+                        Find the best hotels
+                    </h4>
+                    <p class="booking-hotel-desc mt-3">Book a hotel with us and get the best fares and promotions.</p>
+                    <p class="booking-hotel-desc mt-3">We know hotels - we know comfort.</p>
+                    <button class="btn btn-hotel btn-secondary">Search Hotels</button>
+                </div>
+
+                <!-- Booking content rental -->
+                <div class="booking-content p-3">
+                    <h4 class="booking-header">
+                        Travel the world with usBest car rental in the world!
+                    </h4>
+                    <p class="booking-rental-desc"><span class="btn btn-rental btn-danger">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+                    <div class="row">
+                        <div class="px-2">
+                            <input  class="input-rental p-2" type="text" placeholder="Pick-up point">
+                        </div>
+                       
+                    </div>
+                    <button class="btn btn-secondary px-3 py-2 my-3">Search and find dates</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Offer -->
+        <div class="content-offer">
+            <div class="content-heading">
+                <h2 class="content-header">
+                    Good Offers Right Now
+                </h2>
+                <p class="p content-title">
+                    Up to 50% discount.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-6 offer-item">
+                    <img src="./assets/img/offer1.jpg" alt="" class="offer-img">
+                    <p class="offer-place">
+                        Cinque Terre
+                    </p>
+                </div>
+                <div class="col-6 offer-item">
+                    <div class="row mb-4">
+                        <div class="col-6 offer-item">
+                            <img src="./assets/img/offer2.jpg" alt="" class="offer-img">
+                            <p class="offer-place">
+                                New York
+                            </p>
+                        </div>
+                        <div class="col-6 offer-item">
+                            <img src="./assets/img/offer3.jpg" alt="" class="offer-img">
+                            <p class="offer-place">
+                                San Francisco
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 offer-item">
+                            <img src="./assets/img/offer4.jpg" alt="" class="offer-img">
+                            <p class="offer-place">
+                                Pisa
+                            </p>
+                        </div>
+                        <div class="col-6 offer-item">
+                            <img src="./assets/img/offer5.jpg" alt="" class="offer-img">
+                            <p class="offer-place">
+                                Paris
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Explore -->
+        <div class="content-explore">
+            <div class="content-heading">
+                <h2 class="content-header">
+                    Explore Nature
+                </h2>
+                <p class="p content-title">
+                    Travel with us and see nature at its finest.
+                </p>
+            </div>
+            <div class="content-explore">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="./assets/img/card1.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">West Coast, Norway</h5>
+                                <p class="card-price">Roundtrip from $79</p>
+                                <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="btn btn-buy-ticket btn-primary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="./assets/img/card2.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Mountains, Austria</h5>
+                                <p class="card-price">One-way from $39</p>
+                                <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a href="#" class="btn btn-buy-ticket btn-primary">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="content-newsletter p-3 mt-5">
+            <h4 class="newsletter-header">
+                Get the best offers first!
+            </h4>
+            <p class="newletter-desc mb-3">Join our newsletter.</p>
+            <div class="row">
+                <div class="d-flex flex-column form-group px-3">
+                    <label for="">E-mail</label>
+                    <input  class="input-newletter p-2" type="text" placeholder="Your email address">
+                </div>
+               
+            </div>
+            <button class="btn btn-newsletter btn-secondary px-3 py-2 my-3">Subcribe</button>
+        </div>
+
+        <!-- Contact -->
+        <div class="content-contact">
+            <div class="content-heading">
+                <h2 class="content-header">
+                    Contact
+                </h2>
+                <p class="p content-title">
+                    Let us book your next trip!
+                </p>
+            </div>
+            <div class="contact-address">
+                <div class="address-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Chicago, US</span>
+                </div>
+                <div class="address-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone: +00 151515</span>
+                </div>
+                <div class="address-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: mail@mail.com</span>
+                </div>
+            </div>
+            <form action="">
+                <div class="contact-input-list">
+                    <div class="input">
+                        <input required type="text" class="name input-item" placeholder="Name">
+                    </div>
+                    <div class="input">
+                        <input required type="email" class="email input-item" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <input required type="text" class="subject input-item" placeholder="Message">
+                    </div>
+                </div>
+                <div class="contact-btn">
+                    <button class=" btn btn-contact btn-secondary">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3 class="footer-header">
+                Find Us On
+            </h3>
+            <ul class="footer-socials">
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="" class="footer-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-sponser">
+                Powered by Vo Khoa Nam
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+<script>
+    const tabsBooking = document.querySelectorAll('.booking-item')
+    const tabsContent = document.querySelectorAll('.booking-content')
+    
+    tabsBooking.forEach((tab, index) =>{
+        const content = tabsContent[index]
+
+        tab.onclick = function(){
+            document.querySelector('.booking-item.active').classList.remove('active')
+            document.querySelector('.booking-content.active').classList.remove('active')
+
+            this.classList.add('active')
+            content.classList.add('active')
+        }
+    })
+</script>
+</html>
