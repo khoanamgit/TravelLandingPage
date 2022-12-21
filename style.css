@@ -227,10 +227,12 @@ body{
     background-color: var(--black-color);
     color: var(--white-color);
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .content-newsletter:hover{
     opacity: 1;
+    transition: 0.6s;
 }
 
 .newsletter-header{
@@ -262,14 +264,18 @@ body{
     padding-bottom: 16px;
 }
 
+.contact-icon{
+    width: 30px;
+}
+
 .address-item{
     font-size: 15px;
     
 }
 
-.address-item span{
+/* .address-item span{
     padding-left: 10px;
-}
+} */
 
 .input-item{
     width: 100%;
@@ -399,7 +405,7 @@ ul{
     }
 
     .offer-place{
-        bottom: 10px;
+        bottom: 0px;
         left: 9px;
     }
 
@@ -418,6 +424,8 @@ ul{
     .card-top{
         margin-bottom: 16px;
     }
+
+   
 }
 
 @media only screen and (min-width: 1101px){
