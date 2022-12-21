@@ -38,7 +38,7 @@
         <div class="main-navbar container-fluid d-flex justify-content-between">
             <div href="#" class="logo navbar-brand">
                 <i class="fa-solid fa-location-dot"></i>
-                <span>Location</span>
+                <span>Travel Happy</span>
             </div>
             <div class="search ">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -79,17 +79,20 @@
                     <h4 class="booking-header">
                         Travel the world with us
                     </h4>
-                    <div class="row">
-                        <div class="col-6 d-flex flex-column form-group">
-                            <label for="">From</label>
-                            <input class="input-form p-2" type="text" placeholder="Departing from">
+                    <form action="">
+
+                        <div class="row">
+                            <div class="col-6 d-flex flex-column form-group">
+                                <label for="">From</label>
+                                <input class="input-form p-2" type="text" required placeholder="Departing from">
+                            </div>
+                            <div class="col-6 d-flex flex-column form-group">
+                                <label for="">To</label>
+                                <input class="input-form p-2" type="text" required placeholder="Arriving at">
+                            </div>
                         </div>
-                        <div class="col-6 d-flex flex-column form-group">
-                            <label for="">To</label>
-                            <input class="input-form p-2" type="text" placeholder="Arriving at">
-                        </div>
-                    </div>
-                    <button class="btn btn-secondary px-3 py-2 my-3">Search and find dates</button>
+                        <button class="btn btn-secondary px-3 py-2 my-3">Search and find dates</button>
+                    </form>
                 </div>
 
                 <!-- Booing content Hotel -->
@@ -108,13 +111,16 @@
                         Travel the world with usBest car rental in the world!
                     </h4>
                     <p class="booking-rental-desc"><span class="btn btn-rental btn-danger">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+                    
+
                     <div class="row">
                         <div>
-                            <input  class="input-rental p-2" type="text" placeholder="Pick-up point">
+                            <input  class="input-rental p-2" type="text" required placeholder="Pick-up point">
                         </div>
-                       
+                        
                     </div>
                     <button class="btn btn-secondary px-3 py-2 my-3">Search and find dates</button>
+                   
                 </div>
             </div>
         </div>
@@ -214,13 +220,15 @@
             </h4>
             <p class="newletter-desc mb-3">Join our newsletter.</p>
             <div class="row">
-                <div class="d-flex flex-column form-group">
-                    <label for="">E-mail</label>
-                    <input  class="input-newletter p-2" type="text" placeholder="Your email address">
-                </div>
+                <form action="">
+                    <div class="d-flex flex-column form-group">
+                        <label for="">E-mail</label>
+                        <input  class="input-newletter p-2" type="email" required placeholder="Your email address">
+                    </div>
+                    <button class="btn btn-newsletter btn-secondary px-3 py-2 my-3">Subcribe</button>
+                </form>
                
             </div>
-            <button class="btn btn-newsletter btn-secondary px-3 py-2 my-3">Subcribe</button>
         </div>
 
         <!-- Contact -->
@@ -322,7 +330,7 @@
     
     tabsBooking.forEach((tab, index) =>{
         const content = tabsContent[index]
-
+        console.log(tab)
         tab.onclick = function(){
             document.querySelector('.booking-item.active').classList.remove('active')
             document.querySelector('.booking-content.active').classList.remove('active')
